@@ -192,7 +192,9 @@ class Termynal {
 * HTML API: If current script has container(s) specified, initialise Termynal.
 */
 if (document.currentScript.hasAttribute('data-termynal-container')) {
+    const termynalElement = document.getElementById("termynal")
+    const progressLength = Math.min(40, Math.round(termynalElement.clientWidth / 16.5));
     const containers = document.currentScript.getAttribute('data-termynal-container');
     containers.split('|')
-        .forEach(container => new Termynal(container, { progressLength: Math.min(40, Math.round(window.innerWidth / 15)) }))
+        .forEach(container => new Termynal(container, { progressLength: progressLength }))
 }
