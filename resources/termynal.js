@@ -61,8 +61,8 @@ class Termynal {
          * If container is empty and lines are dynamically loaded, defaults to browser `auto` or CSS.
          */
         const containerStyle = getComputedStyle(this.container);
-        this.container.style.width = containerStyle.width !== '0px' ?
-            containerStyle.width : undefined;
+        // this.container.style.width = containerStyle.width !== '0px' ?
+        //     containerStyle.width : undefined;
         this.container.style.minHeight = containerStyle.height !== '0px' ?
             containerStyle.height : undefined;
 
@@ -193,8 +193,7 @@ class Termynal {
 */
 if (document.currentScript.hasAttribute('data-termynal-container')) {
     const termynalElement = document.getElementById("termynal")
-    const progressLength = Math.min(40, Math.round(termynalElement.clientWidth / 16.5));
     const containers = document.currentScript.getAttribute('data-termynal-container');
     containers.split('|')
-        .forEach(container => new Termynal(container, { progressLength: progressLength }))
+        .forEach(container => new Termynal(container))
 }

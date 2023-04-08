@@ -29,14 +29,14 @@ body {
 }
 
 [data-termynal] {
-    width: 550px;
+    width: 65vw;
     max-width: 100%;
     background: var(--color-bg);
     color: var(--color-text);
-    font-size: 18px;
+    font-size: 2vw;
     font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
     border-radius: 4px;
-    padding: 75px 45px 35px;
+    padding: 10.5vw 6.3vw 4.2vw;
     position: relative;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -45,16 +45,16 @@ body {
 [data-termynal]:before {
     content: '';
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 1vw;
+    left: 1vw;
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 1vw;
+    height: 1vw;
     border-radius: 50%;
     /* A little hack to display the window buttons in one pseudo element. */
     background: #FA8E89;
-    -webkit-box-shadow: 25px 0 0 #FADB57, 50px 0 0 #64FA9A;
-            box-shadow: 25px 0 0 #FADB57, 50px 0 0 #64FA9A;
+    -webkit-box-shadow: 1.5vw 0 0 #FADB57, 3vw 0 0 #64FA9A;
+            box-shadow: 1.5vw 0 0 #FADB57, 3vw 0 0 #64FA9A;
 }
 
 [data-ty] {
