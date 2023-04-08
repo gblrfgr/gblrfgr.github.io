@@ -5,7 +5,7 @@ body {
 
     padding: 0; margin: 0;
     background: linear-gradient(to right, #ff9a9e, #fecfef);
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     display: flex;
     align-items: center;   
@@ -94,6 +94,13 @@ body {
 a {
     color: #7072FA;
     text-decoration: none
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+    :root {
+        width: fit-content;
+    }
 }
 
 /* Cursor animation */
