@@ -61,8 +61,6 @@ class Termynal {
          * If container is empty and lines are dynamically loaded, defaults to browser `auto` or CSS.
          */
         const containerStyle = getComputedStyle(this.container);
-        // this.container.style.width = containerStyle.width !== '0px' ?
-        //     containerStyle.width : undefined;
         this.container.style.minHeight = containerStyle.height !== '0px' ?
             containerStyle.height : undefined;
 
